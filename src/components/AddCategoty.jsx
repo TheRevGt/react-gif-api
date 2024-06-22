@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import {PropTypes} from "prop-types"
 export const AddCategoty = ({onNewCategory}) => {
     const [inputValue, setInputValue] = useState('');
     const onInputChange = ({target}) => {
@@ -27,4 +27,7 @@ export const AddCategoty = ({onNewCategory}) => {
         <button className=" rounded-lg border-2 bg-blue-600 hover:bg-blue-800 m-1 p-2 border-gray-600 text-white" onClick={onSubmit}>Ad Category</button>
     </form>
   )
+}
+AddCategoty.propTypes = {
+  onNewCategory: PropTypes.func.isRequired
 }
