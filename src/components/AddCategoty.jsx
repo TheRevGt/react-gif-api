@@ -15,7 +15,7 @@ export const AddCategoty = ({onNewCategory}) => {
     }
 
   return (
-    <form onSubmit={onSubmit} className="w-full">
+    <form onSubmit={onSubmit} className="w-full" aria-label="form">
         <input
         className=" rounded-lg border-2 p-2 border-slate-300 placeholder-slate-400 contrast-more:border-slate-400 contrast-more:placeholder-slate-500"
         type="text" 
